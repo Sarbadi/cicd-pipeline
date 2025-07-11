@@ -20,7 +20,7 @@ jobs:
         run: echo "$DOCKER_PAT" | docker login -u "$DOCKER_USERNAME" --password-stdin
 
       - name: Build the Docker image
-        run: docker build -t cicd-pipeline .
+        run: docker build -t sarahbadibanga883/cicd-pipeline .
 
       - name: Push to Docker Hub
         run: docker push sarahbadibanga883/cicd-pipeline:latest
